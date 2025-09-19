@@ -1,68 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Services
-  Projects
-  Contact
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  We are creatives
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  Transform your brand
+    <link rel="stylesheet" href="output.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-body">
+    <header
+      class="absolute top-0 left-0 w-full text-white flex justify-between items-center px-6 py-8"
+    >
+      <a href="" id="logo"
+        ><img src="images/logo.svg" alt="sunnyside logo"
+      /></a>
+      <nav class="space-x-6 text-lg hidden sm:flex">
+        <a href="#" class="hover:bg-cyan-300 p-2 rounded-full">About</a>
+        <a href="#" class="hover:bg-cyan-300 p-2 rounded-full">Services</a>
+        <a href="#" class="hover:bg-cyan-300 p-2 rounded-full">Projects</a>
+        <a href="#" class="bg-white hover:bg-cyan-100 p-2 rounded-full"
+          >Contact</a
+        >
+      </nav>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+      <a href="" class="sm:hidden" id="hamburger-button"
+        ><img src="images/icon-hamburger.svg" alt=""
+      /></a>
 
-  Learn more
+      <div class="absolute left-0 top-20 w-full px-10 sm:hidden hidden" id="mobile-menu">
+        <div class="triangle absolute right-0"></div>
+        <nav
+          class="w-full py-10 m-auto  flex flex-col gap-6 bg-white text-black text-center items-center"
+        >
+          <a href="#" class="">About</a>
+          <a href="#" class="">Services</a>
+          <a href="#" class="">Projects</a>
+          <a href="#" class="p-4 rounded-full bg-yellow-500">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  Stand out to the right audience
+    <section
+      class="hero text-white text-center bg-[url('./images/desktop/image-header.jpg')] bg-cover bg-center h-150 pt-40"
+    >
+      <h1 class="font-headings font-black text-5xl uppercase">
+        We are creatives
+      </h1>
+    </section>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+    <div class="grid grid-cols-1 mx-auto sm:grid-cols-2">
+      <div class="aspect-square p-8">
+        <h1>Transform your brand</h1>
+        <p>
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
 
-  Learn more
+        <a href="" class="fancy-underline font-black font-headings uppercase">
+          Learn more
+        </a>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+        <p>
+          <a
+            href=""
+            class="font-black font-headings uppercase relative z-0 inline after:content-[''] after:absolute after:left-[-10%] after:bottom-[-2px] after:w-[120%] after:h-2 after:bg-yellow-500 after:rounded-lg after:-z-10 after:opacity-0 after:transition-all after:duration-1000 hover:after:opacity-100"
+            >Learn more
+          </a>
+        </p>
+      </div>
+      <div class="bg-blue-200 aspect-square">b</div>
+      <div class="bg-blue-300 aspect-square">c</div>
+      <div class="bg-blue-400 aspect-square">d</div>
+      <div
+        class="bg-blue-500 aspect-square bg-[url(images/desktop/image-graphic-design.jpg)] bg-cover bg-center flex flex-col justify-end pb-10 px-10 text-center gap-2 lg:pb-20"
+      >
+        <h2 class="text-3xl font-headings font-black text-green-500">
+          Graphic Design
+        </h2>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients’ attention.
+        </p>
+      </div>
+      <div class="bg-blue-600 aspect-square">f</div>
+    </div>
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+    <img
+      src="images/desktop/image-gallery-cone.jpg"
+      class="hidden md:block"
+      alt=""
+    />
+    <img
+      src="images/mobile/image-gallery-cone.jpg"
+      alt=""
+      class="block md:hidden"
+    />
 
-  Client testimonials
+    <section class="transform">
+      Transform your brand We are a full-service creative agency specializing in
+      helping brands grow fast. Engage your clients through compelling visuals
+      that do most of the marketing for you. Learn more
+    </section>
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
+    <section class="stand-out">
+      Stand out to the right audience Using a collaborative formula of
+      designers, researchers, photographers, videographers, and copywriters,
+      we’ll build and extend your brand in digital places. Learn more
+    </section>
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
+    <section>
+      <div class="graphic-design">
+        Graphic design Great design makes you memorable. We deliver artwork that
+        underscores your brand message and captures potential clients’
+        attention.
+      </div>
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
+      <div class="photography">
+        Photography Increase your credibility by getting the most stunning,
+        high-quality photos that improve your business image.
+      </div>
+    </section>
 
-  About
-  Services
-  Projects
-  Contact
+    <section class="testimonials">
+      Client testimonials We put our trust in Sunnyside and they delivered,
+      making sure our needs were met and deadlines were always hit. Emily R.
+      Marketing Director Sunnyside’s enthusiasm coupled with their keen interest
+      in our brand’s success made it a satisfying and enjoyable experience.
+      Thomas S. Chief Operating Officer Incredible end result! Our sales
+      increased over 400% when we worked with Sunnyside. Highly recommended!
+      Jennie F. Business Owner
+    </section>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <section class="images"></section>
+
+    <footer>
+      About Services Projects Contact
+
+      <div class="socials bg-blue-950 p-4">
+        <a href="" class="text-white hover:text-green-400">
+          <svg
+            width="20"
+            height="20"
+            class="fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#"> Kenan Casey </a>.
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
