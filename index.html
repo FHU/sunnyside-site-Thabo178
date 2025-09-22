@@ -74,30 +74,41 @@
       </h1>
     </section>
 
-    <div class="grid grid-cols-1 mx-auto sm:grid-cols-2">
-      <div class="aspect-square p-8">
-        <h1>Transform your brand</h1>
-        <p>
+    <div class="grid grid-cols-1 mx-auto sm:grid-cols-2 text-center">
+      <div class="aspect-square flex flex-col justify-center items-center text-center p-8">
+        <h1 class="text-3xl font-headings font-black text-black">Transform your brand</h1>
+        <p class="mt-8 mb-8 text-gray-400">
           We are a full-service creative agency specializing in helping brands
           grow fast. Engage your clients through compelling visuals that do most
           of the marketing for you.
         </p>
 
-        <a href="" class="fancy-underline font-black font-headings uppercase">
-          Learn more
-        </a>
-
         <p>
           <a
             href=""
-            class="font-black font-headings uppercase relative z-0 inline after:content-[''] after:absolute after:left-[-10%] after:bottom-[-2px] after:w-[120%] after:h-2 after:bg-yellow-500 after:rounded-lg after:-z-10 after:opacity-0 after:transition-all after:duration-1000 hover:after:opacity-100"
+            class="font-black mt-10 font-headings uppercase relative z-0 inline after:content-[''] after:absolute after:left-[-10%] after:bottom-[-2px] after:w-[120%] after:h-2 after:bg-yellow-500 after:rounded-lg after:-z-10 after:opacity-0 after:transition-all after:duration-1000 hover:after:opacity-100"
             >Learn more
           </a>
         </p>
       </div>
-      <div class="bg-blue-200 aspect-square">b</div>
-      <div class="bg-blue-300 aspect-square">c</div>
-      <div class="bg-blue-400 aspect-square">d</div>
+      <div class="bg-blue-200 aspect-square bg-[url(images/desktop/image-transform.jpg)] bg-cover bg-center flex flex-col justify-end pb-10 px-10 text-center gap-2 lg:pb-20"></div>
+      <div class="bg-blue-300 aspect-square bg-[url(images/desktop/image-stand-out.jpg)] bg-cover bg-center flex flex-col justify-end pb-10 px-10 text-center gap-2 lg:pb-20"></div>
+      <div class="aspect-square flex flex-col justify-center items-center text-center p-8">
+        <h1 class="text-3xl font-headings font-black text-black">Stand out to the right audience</h1>
+        <p class="mt-8 mb-8 text-gray-400">
+          Using a collaborative formula of
+          designers, researchers, photographers, videographers, and copywriters,
+          we’ll build and extend your brand in digital places.
+        </p>
+
+        <p>
+          <a
+            href=""
+            class="font-black mt-10 font-headings uppercase relative z-0 inline after:content-[''] after:absolute after:left-[-10%] after:bottom-[-2px] after:w-[120%] after:h-2 after:bg-yellow-500 after:rounded-lg after:-z-10 after:opacity-0 after:transition-all after:duration-1000 hover:after:opacity-100"
+            >Learn more
+          </a>
+        </p>
+      </div>
       <div
         class="bg-blue-500 aspect-square bg-[url(images/desktop/image-graphic-design.jpg)] bg-cover bg-center flex flex-col justify-end pb-10 px-10 text-center gap-2 lg:pb-20"
       >
@@ -109,8 +120,67 @@
           your brand message and captures potential clients’ attention.
         </p>
       </div>
-      <div class="bg-blue-600 aspect-square">f</div>
+      <div
+        class="bg-blue-500 aspect-square bg-[url(images/desktop/image-photography.jpg)] bg-cover bg-center flex flex-col justify-end pb-10 px-10 text-center gap-2 lg:pb-20"
+      >
+        <h2 class="text-3xl font-headings font-black text-gray-500">
+          Photography
+        </h2>
+        <p>
+          Increase your credibility by getting the most stunning,
+        high-quality photos that improve your business image.
+        </p>
+      </div>
     </div>
+
+
+    <section class="py-20 bg-gray-50 text-center">
+      <h2 class="text-2xl font-headings font-black uppercase tracking-widest text-gray-300">
+        Client testimonials
+      </h2>
+    
+      <div class="mt-12 grid gap-12 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto px-6">
+        <!-- Testimonial 1 -->
+        <div class="flex flex-col items-center space-y-6">
+          <img src="images/image-emily.jpg" alt="Emily R." class="w-16 h-16 rounded-full object-cover">
+          <p class="text-gray-600 leading-relaxed max-w-xs">
+            We put our trust in Sunnyside and they delivered, making sure our needs
+            were met and deadlines were always hit.
+          </p>
+          <div>
+            <h3 class="font-headings font-black text-black">Emily R.</h3>
+            <p class="text-gray-400 text-sm">Marketing Director</p>
+          </div>
+        </div>
+    
+        <!-- Testimonial 2 -->
+        <div class="flex flex-col items-center space-y-6">
+          <img src="images/image-thomas.jpg" alt="Thomas S." class="w-16 h-16 rounded-full object-cover">
+          <p class="text-gray-600 leading-relaxed max-w-xs">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+            success made it a satisfying and enjoyable experience.
+          </p>
+          <div>
+            <h3 class="font-headings font-black text-black">Thomas S.</h3>
+            <p class="text-gray-400 text-sm">Chief Operating Officer</p>
+          </div>
+        </div>
+    
+        <!-- Testimonial 3 -->
+        <div class="flex flex-col items-center space-y-6">
+          <img src="images/image-jennie.jpg" alt="Jennie F." class="w-16 h-16 rounded-full object-cover">
+          <p class="text-gray-600 leading-relaxed max-w-xs">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <div>
+            <h3 class="font-headings font-black text-black">Jennie F.</h3>
+            <p class="text-gray-400 text-sm">Business Owner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
     <img
       src="images/desktop/image-gallery-cone.jpg"
@@ -122,6 +192,8 @@
       alt=""
       class="block md:hidden"
     />
+
+
 
     <section class="transform">
       Transform your brand We are a full-service creative agency specializing in
@@ -183,7 +255,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#"> Kenan Casey </a>.
+      >. Coded by <a href="#"> Thabo Mahlaha </a>.
     </div>
 
     <script src="app.js"></script>
